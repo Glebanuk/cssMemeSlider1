@@ -1,38 +1,82 @@
 *{
-    box-sizing:border-box;
+  box-sizing:border-box;
 }
 body{
-    background-color: rgb(165, 223, 228);
-    margin: 0 auto;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+  background-color: rgb(165, 223, 228);
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 .slider-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80vh;
-    /* height: 50vh; */
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 120vh;
+  overflow: hidden;
+  gap: 3%;
 }
 
 .slider{
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .slider input{
-    display: none;
+  display: none;
 }
 
-.btn{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color:white;
-}
 img{
     width: 100%;
+    border-radius: 1%;
+    transition: all 0.15s ease;
     
+  }
+
+.footer-content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
+.navigation{
+    display: inline-block;
+}
+.caption-conateiner{
+    display: inline;
+    overflow: hidden;
+    width: 50%;
+}
+.caption-conateiner span{
+    
+    /* font-size: 200%; */
+  
+}
+.btn{
+    display: inline-block;
+  width: 3vh;
+  height: 3vh;
+  border: solid white;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+
+.btn:hover{
+  background-color: white;
+}
+
+#rd1:checked ~ .img1{
+    margin-left: 0;
+}
+#rd2:checked ~ .img2{
+    margin-left: -100%;
+}
+#rd3:checked ~ .img3{
+    margin-left: -200%;
+}
+#rd4:checked ~ .img4{
+    margin-left: -300%;
+}
+
