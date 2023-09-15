@@ -2,7 +2,7 @@
   box-sizing:border-box;
 }
 body{
-  background-color: rgb(165, 223, 228);
+  background-color: rgb(147, 182, 170);
   margin: 0 auto;
   height: 100vh;
   display: flex;
@@ -28,7 +28,7 @@ body{
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 1%;
     transition: all 0.20s ease;
@@ -43,15 +43,26 @@ img{
 .navigation{
     display: inline-block;
 }
-.caption-conateiner{
-    display: inline;
+.text-wrapper{
+    display: inline-block;
+    width: 60%;
+    white-space: nowrap;
     overflow: hidden;
-    width: 50%;
 }
-.caption-conateiner span{
-    
-    /* font-size: 200%; */
-  
+.caption-conateiner{
+    display: inline-block;
+    transition: all 0.20s ease;
+    width: 100%;
+}
+.img1-text,
+.img2-text,
+.img3-text,
+.img4-text{
+    color: rgb(62, 77, 71);
+    font-size: 200%;
+    display: inline-block;
+   width: 100%;
+    white-space: nowrap;
 }
 .btn{
     display: inline-block;
@@ -69,16 +80,28 @@ img{
   background-color: white;
 }
 
-#rd1:checked ~ .img1{
+#rd1:checked ~ .img1 {
     margin-left: 0;
 }
+
 #rd2:checked ~ .img2{
     margin-left: -100%;
 }
 #rd3:checked ~ .img3{
-    margin-left: -200%;
+margin-left: -200%;
 }
 #rd4:checked ~ .img4{
     margin-left: -300%;
 }
 
+#rd1:checked ~ .caption-conateiner{
+    margin-left: 0;
+}
+#rd2:checked ~ .caption-conateiner{
+    margin-left: -100%;
+}
+/* ,
+#rd3:checked ~ .img3 + .text-wrapper .caption-conateiner,
+#rd4:checked ~ .img4 + .text-wrapper .caption-conateiner {
+    
+} */
