@@ -58,12 +58,12 @@ img{
     justify-content: space-between;
 }
 .navigation{
-    display: inline-block;
+    display: inline;
     border:3px dashed blue;
 }
 
 .caption-conateiner{
-    display: inline-block;
+    display: inline;
     transition: all 0.20s ease;
     width: 100%;
 }
