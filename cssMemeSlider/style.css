@@ -33,12 +33,18 @@ body{
   width: 100%;
 }
 .caption-conateiner{
-  display: flex;
   white-space: nowrap;
-  border: 5px dotted green;
+  /* border: 5px dotted green; */
+  display: inline;
+    transition: all 0.20s ease-in;
+    width: 74%;
+    overflow: hidden;
 }
 .nav-text__wrapper{
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center
 }
  input{
   display: none;
@@ -59,20 +65,20 @@ img{
 }
 .navigation{
     display: inline;
-    border:3px dashed blue;
+    /* border:3px dashed blue; */
 }
 
 .caption-conateiner{
     display: inline;
-    transition: all 0.20s ease;
-    width: 100%;
+    transition: all 0.20s ease-in;
+    width: 74%;
 }
 .img1-text,
 .img2-text,
 .img3-text,
 .img4-text{
     color: rgb(62, 77, 71);
-    font-size: 200%;
+    font-size: 185%;
     display: inline-block;
    width: 100%;
     white-space: nowrap;
@@ -107,19 +113,19 @@ margin-left: -200%;
     margin-left: -300%;
 }
 
-#rd1:checked ~ .nav-text__wrapper .caption-conateiner {
+#rd1:checked ~ .nav-text__wrapper .caption-conateiner li:nth-child(1) {
   margin-left: 0;
 }
 
-#rd2:checked ~ .nav-text__wrapper  .caption-conateiner {
+#rd2:checked ~ .nav-text__wrapper  .caption-conateiner li:nth-child(1) {
   margin-left: -100%;
 }
 
-#rd3:checked ~ .nav-text__wrapper  .caption-conateiner {
+#rd3:checked ~ .nav-text__wrapper  .caption-conateiner li:nth-child(1){
   margin-left: -200%;
 }
 
-#rd4:checked ~ .nav-text__wrapper  .caption-conateiner {
+#rd4:checked ~ .nav-text__wrapper  .caption-conateiner li:nth-child(1){
   margin-left: -300%;
 }
 
