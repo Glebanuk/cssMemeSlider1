@@ -28,6 +28,7 @@ body{
   height: 100%;
   width: 400%;
   margin-bottom: 2%;
+  transition: all 0.60s ease;
 }
 .img-container li{
   width: 100%;
@@ -46,6 +47,16 @@ body{
   justify-content: space-between;
   align-items: center
 }
+.caption__text-wrapper{
+  display: flex;
+  width: 400%;
+  transition: all 0.60s ease;
+}
+.caption__text-wrapper p{
+width: 100%;
+margin: 0;
+transition: all 0.20 ease;
+}
  input{
   display: none;
 }
@@ -55,7 +66,7 @@ img{
     height: 100%;
     border-radius: 1%;
     transition: all 0.20s ease;
-    
+
   }
 
 .footer-content{
@@ -73,12 +84,9 @@ img{
     transition: all 0.20s ease-in;
     width: 64%;
 }
-.img1-text,
-.img2-text,
-.img3-text,
-.img4-text{
+.caption__text-wrapper p{
     color: rgb(62, 77, 71);
-    font-size: 100%;
+    font-size: 150%;
     display: inline-block;
    width: 100%;
     white-space: nowrap;
@@ -99,9 +107,11 @@ img{
   background-color: white;
 }
 .btn:active{
-  background-color: red
+  background-color:blue;
+  transform: scale(1.2);
 }
 
+/* Двигаем картинки */
 #rd1:checked ~ .img-container {
     margin-left: 0;
 }
@@ -115,7 +125,20 @@ margin-left: -200%;
 #rd4:checked ~ .img-container{
     margin-left: -300%;
 }
-
+/* смена цвета кнопок */
+    #rd1:checked ~ .nav-text__wrapper div label[for="rd1"] {
+      background-color: white;
+    }
+    #rd2:checked ~ .nav-text__wrapper div label[for="rd2"] {
+      background-color: white;
+    }
+    #rd3:checked ~ .nav-text__wrapper div label[for="rd3"] {
+      background-color: white;
+    }
+    #rd4:checked ~ .nav-text__wrapper div label[for="rd4"] {
+      background-color: white;
+    }
+/* двигаем текст */
 #rd1:checked ~ .nav-text__wrapper .caption-conateiner li:nth-child(1) {
   margin-left: 0;
 }
