@@ -34,14 +34,14 @@ body{
 }
 .caption-conateiner{
   white-space: nowrap;
-  /* border: 5px dotted green; */
+  border: 5px dotted green;
   display: inline;
     transition: all 0.20s ease-in;
     width: 74%;
     overflow: hidden;
 }
 .nav-text__wrapper{
-  /* border: 1px solid red; */
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center
@@ -65,20 +65,20 @@ img{
 }
 .navigation{
     display: inline;
-    /* border:3px dashed blue; */
+    border:3px dashed blue;
 }
 
 .caption-conateiner{
     display: inline;
     transition: all 0.20s ease-in;
-    width: 74%;
+    width: 64%;
 }
 .img1-text,
 .img2-text,
 .img3-text,
 .img4-text{
     color: rgb(62, 77, 71);
-    font-size: 185%;
+    font-size: 100%;
     display: inline-block;
    width: 100%;
     white-space: nowrap;
@@ -97,6 +97,9 @@ img{
 
 .btn:hover{
   background-color: white;
+}
+.btn:active{
+  background-color: red
 }
 
 #rd1:checked ~ .img-container {
